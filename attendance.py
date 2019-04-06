@@ -17,21 +17,26 @@ def start(bot, update):
 
 def attendance_fetcher(bot, update, args):
 
+    if(args == []):
+        bot.send_message(chat_id=update.message.chat_id,
+                         text="enter login details like below: \n/login < username > : < password >")
+
     print("inside fetcher!")
     now = datetime.datetime.now()
     date2 = now.strftime("%Y-%m-%d")
+    date1 = "2019-01-28"
     print(date2)
 
     subject_name = {
-        "DESIGN AND ANALYSIS OF ALGORITHMS CS302": "DAA",
-        "COMPILER DESIGN CS304": "CD",
-        "COMPUTER NETWORKS CS306": "CN",
-        "SOFTWARE ENGINEERING AND PROJECT MANAGEMENT CS308": "SEPM",
-        "MICROPROCESSOR LAB CS332": "MP_LAB",
-        "NETWORK PROGRAMMING LAB CS334": "NP_LAB",
+        "DESIGN AND ANALYSIS OF ALGORITHMS CS302": "DAA      ",
+        "COMPILER DESIGN CS304": "CD        ",
+        "COMPUTER NETWORKS CS306": "CN        ",
+        "SOFTWARE ENGINEERING AND PROJECT MANAGEMENT CS308": "SEPM    ",
+        "MICROPROCESSOR LAB CS332": "MP_LAB  ",
+        "NETWORK PROGRAMMING LAB CS334": "NP_LAB  ",
         "COMPREHENSIVE EXAM CS352": "COMPR_EX",
-        "WEB TECHNOLOGIES CS368": "WT",
-        "PRINCIPLES OF MANAGEMENT HS300 ": "POM"
+        "WEB TECHNOLOGIES CS368": "WT       ",
+        "PRINCIPLES OF MANAGEMENT HS300 ": "POM       "
 
 
 
@@ -81,7 +86,7 @@ def attendance_fetcher(bot, update, args):
     cookies = {
         'PHPSESSID': cookie.split('=')[1].strip(';')
     }
-    data = "-----------------------------17760220484614\r\nContent-Disposition: form-data; name=\"date1\"\r\n\r\n2019-01-28\r\n-----------------------------17760220484614\r\nContent-Disposition: form-data; name=\"date2\"\r\n\r\n" + \
+    data = "-----------------------------17760220484614\r\nContent-Disposition: form-data; name=\"date1\"\r\n\r\n"+date1+"\r\n-----------------------------17760220484614\r\nContent-Disposition: form-data; name=\"date2\"\r\n\r\n" + \
         date2+"\r\n-----------------------------17760220484614\r\nContent-Disposition: form-data; name=\"btnshow-new\"\r\n\r\n\r\n-----------------------------17760220484614--\r\n"
     files = {'file': ''}
     proxies = {"http": "http://127.0.0.1:8080",
@@ -98,6 +103,8 @@ def attendance_fetcher(bot, update, args):
     attended = []
     perc = []
     count = 1
+    name = soup.find("td").text
+    print(name)
     for strong_tag in soup.find_all('td')[3:]:
         # print(strong_tag.text)
         i += 1
@@ -133,7 +140,8 @@ def attendance_fetcher(bot, update, args):
         a = sname[i]+": " + attended[i] + "/"+total[i]+"  " + \
             perc[i] + "  cuttable:"+str(classcut[i])+"\n"
         final_text = final_text+a
-    final_text = "<strong>ATTENDANCE</strong>\n"+final_text
+    final_text = "<strong>ATTENDANCE: "+name + \
+        "</strong>\nTill : "+date2+"\n\n"+final_text
     bot.send_message(chat_id=update.message.chat_id,
                      text=final_text, parse_mode="HTML")
     print(final_text)
