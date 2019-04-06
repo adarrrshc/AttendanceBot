@@ -1,0 +1,5430 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>RIT Soft v2</title>
+    <link rel="icon" type="image/png" href="../images/logob.png" />
+
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../dash/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="../dash/vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../dash/dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="../dash/vendor/morrisjs/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../dash/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0; ">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="dash_home.php"><img  src="../images/logob.png" alt="RIT" style="width:30px" id='Logo'></a></div><div class="navbar-header" style="padding-top: 20px"><h7 style="color :#007bff ; font-family: 'Berkshire Swash', cursive; font-size: 14px;" ><span style="color :black;">RIT</span>Soft <span style="color :red;">v2</span></h7></div>
+                
+                <!-- /.navbar-header -->
+
+                <ul class="nav navbar-top-links navbar-right">
+                   
+                    <!-- /.dropdown -->
+                              <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-bell fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-messages">
+                                                <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-comment fa-fw"></i>Semester Registration Approved By Staff Advisor 
+                                    <br>
+                                    <span class="pull-right text-muted small">
+                                        January 31, 2019, 5:57 am</span>
+                                </div> 
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                                                <li>
+                            <a class="text-center" href="#">
+                                <strong>See All Alerts</strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-alerts -->
+                </li>
+
+
+
+                   <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-messages">
+                            <li><a href="details.php"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                            </li>
+                            <li><a href="changepd.php"><i class="fa fa-key fa-fw"></i> Change Password</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li><a href="../logout.php"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                            </li>
+                        </ul>
+                        <!-- /.dropdown-user -->
+                    </li>
+                   
+                    <!-- /.dropdown -->
+                </ul>
+                <!-- /.navbar-top-links -->
+
+                
+
+                
+
+                <!-- /side nav -->
+<div class="navbar-default sidebar" role="navigation">
+  <div class="sidebar-nav navbar-collapse">
+    <ul class="nav" id="side-menu">
+                           <!-- <li class="sidebar-search">
+                          <div class="input-group custom-search-form">
+                                <input type="text" class="form-control" placeholder="Search...">
+                                <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </span>
+                            </div>
+                           /input-group 
+                         </li>-->
+                         <li>
+                          <a href="details.php"><i class="fa fa-user fa-fw"></i>ADARSH C       
+                        </a>
+
+                      </a>
+                    </li>
+                    <li>
+                      <a href="empreg.php"><i class="fa fa-image fa-fw"></i>Upload Photo</a>
+
+                    </li>
+                    <li>
+                      <a href="semregpostnew.php"><i class="fa fa-table fa-fw"></i> Semester Registration</a>
+
+                      <!-- /.nav-second-level -->
+                    </li>
+                    <li>
+                      <a href="current_semester.php"><i class="fa fa-info fa-fw"></i> Current Semester </a>
+                    </li>
+                    <li>
+                      <a href="parent_monthly.php"><i class="fa fa-bar-chart-o fa-fw"></i> Attendance View </a>
+                    </li>
+                    <li>
+                      <a href="sessionmark.php" style="text-transform: capitalize;"><i class="fa fa-bar-chart-o fa-fw"></i> series exam mark view</a>
+                    </li>
+                    <li>
+                      <a href="sessional_marks.php" style="text-transform: capitalize;"><i class="fa fa-bar-chart-o fa-fw"></i> sessional marks view</a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa fa-edit fa-fw"></i>University mark<span class="fa arrow"</span></a>
+                       <ul class="nav nav-second-level">
+                         <li>
+                          <a href="mark.php">Marks submission</a> 
+                          <!--  <a href="#">Marks submission</a>-->
+                        </li>
+                        <li>
+                          <a href="markview.php">Marks view</a> 
+                          <!--<a href="#">Marks view</a>-->
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa fa-edit fa-fw"></i>Feedback<span class="fa arrow"</span></a>
+                       <ul class="nav nav-second-level">
+                         <li>
+                           <a href="feedback.php">Give Feedback</a>
+                         </li>
+                       </ul>
+                     </li>
+
+                   </ul>
+                 </div>
+                 <!-- /.sidebar-collapse -->
+               </div>
+               <!-- /.navbar-static-side -->
+             </nav>
+<div id="page-wrapper">
+	<div class="row">
+		<div class="col-lg-12">
+			<h1 class="page-header"><b>ATTENDANCE VIEW</b></h1>
+		</div>
+	</div>
+
+	
+	<div class="table-responsive">
+		<table   class="table table-hover table-bordered" >
+			<tr>
+				<th style="text-align: center;">NAME</th>
+				<th style="text-align: center;">ADMISSION NO</th>
+				<th style="text-align: center;">COURSE</th>
+
+			</tr>
+			<tr align="center">
+
+				<td align="center">ADARSH C</td>
+				<td align="center">16BR11326</td>
+				<td align="center">BTECH</td>
+
+			</table>
+		</div>
+		<form id="form1" name="form1" method="post" action="" enctype="multipart/form-data" class="sear_frm" >
+			<div class="form-row">
+				<div class="form-group col-md-6">
+					<label for="from">FROM</label>
+					<div class="input-group date" data-provide="datepicker"   data-date-start-date="2019-01-28" data-date-end-date ="2019-04-06" > <input type="text" class="form-control mydate datepicker-autoclose"  value="2019-01-28"  id="date1"   name="date1" placeholder="Date " required ><div class="input-group-addon"><span class="fa fa-calendar"></span></div></div>					<!-- <input type="date" class="form-control" id="date1" name="date1" placeholder="yyyy/mm/dd" required=""> -->
+				</div>
+				<div class="form-group col-md-6">
+					<label for="to">TO</label>
+
+					<div class="input-group date" data-provide="datepicker"   data-date-start-date="2019-01-28" data-date-end-date ="2019-04-06" > <input type="text" class="form-control mydate datepicker-autoclose"  value="2019-04-06"  id="date2"   name="date2" placeholder="Date " required ><div class="input-group-addon"><span class="fa fa-calendar"></span></div></div>
+					<!-- <input type="date" class="form-control" id="date2" name="date2" placeholder="yyyy/mm/dd" required=""> -->
+				</div>
+			</div>
+			<!-- <button type="submit" value="" name="btnshow" id="btnshow" class="btn btn-primary">View Attendence</button> -->
+			<button type="submit" value="" name="btnshow-new" id="btnshow-new" class="btn btn-primary">View Attendence</button>
+		</form>
+
+		
+
+
+
+
+
+
+
+
+
+
+							
+
+							<div style="margin-top: 1rem; padding: 1rem 0;">
+								<h4>Subject wise</h4>
+							</div>
+
+							
+
+								<table class="table table-bordered table-hover">
+									<thead>
+										<tr>
+											<th style="text-align: center;" > SUBJECT </th>
+											<th style="text-align: center;" > TOTAL HOURS </th>
+											<th style="text-align: center;" > PRESENT HOURS </th>
+											<th style="text-align: center;">ATTENDANCE PERCENT</th>
+
+										</tr>
+									</thead>
+									<tbody>
+										
+										
+											
+
+
+											<tr> 
+												<td style="text-align: center;">DESIGN AND ANALYSIS OF ALGORITHMS <sub style="color: blue; margin-left: 0.5rem;">CS302</sub></td>
+
+												<td style="text-align: center;">44</td>
+												<td style="text-align: center;">38</td>
+
+																								<td style="text-align: center;">86.36 %</td>
+												 
+												 
+
+											</tr> 
+										
+											
+
+
+											<tr> 
+												<td style="text-align: center;">COMPILER DESIGN <sub style="color: blue; margin-left: 0.5rem;">CS304</sub></td>
+
+												<td style="text-align: center;">18</td>
+												<td style="text-align: center;">17</td>
+
+																								<td style="text-align: center;">94.44 %</td>
+												 
+												 
+
+											</tr> 
+										
+											
+
+
+											<tr> 
+												<td style="text-align: center;">COMPUTER NETWORKS <sub style="color: blue; margin-left: 0.5rem;">CS306</sub></td>
+
+												<td style="text-align: center;">23</td>
+												<td style="text-align: center;">19</td>
+
+																								<td style="text-align: center;">82.61 %</td>
+												 
+												 
+
+											</tr> 
+										
+											
+
+
+											<tr> 
+												<td style="text-align: center;">SOFTWARE ENGINEERING AND PROJECT MANAGEMENT <sub style="color: blue; margin-left: 0.5rem;">CS308</sub></td>
+
+												<td style="text-align: center;">27</td>
+												<td style="text-align: center;">25</td>
+
+																								<td style="text-align: center;">92.59 %</td>
+												 
+												 
+
+											</tr> 
+										
+											
+
+
+											<tr> 
+												<td style="text-align: center;">MICROPROCESSOR LAB <sub style="color: blue; margin-left: 0.5rem;">CS332</sub></td>
+
+												<td style="text-align: center;">27</td>
+												<td style="text-align: center;">27</td>
+
+																								<td style="text-align: center;">100 %</td>
+												 
+												 
+
+											</tr> 
+										
+											
+
+
+											<tr> 
+												<td style="text-align: center;">NETWORK PROGRAMMING LAB <sub style="color: blue; margin-left: 0.5rem;">CS334</sub></td>
+
+												<td style="text-align: center;">27</td>
+												<td style="text-align: center;">27</td>
+
+																								<td style="text-align: center;">100 %</td>
+												 
+												 
+
+											</tr> 
+										
+											
+
+
+											<tr> 
+												<td style="text-align: center;">COMPREHENSIVE EXAM <sub style="color: blue; margin-left: 0.5rem;">CS352</sub></td>
+
+												<td style="text-align: center;">16</td>
+												<td style="text-align: center;">12</td>
+
+																								<td style="text-align: center;">75 %</td>
+												 
+												 
+
+											</tr> 
+										
+											
+
+
+											<tr> 
+												<td style="text-align: center;">WEB TECHNOLOGIES <sub style="color: blue; margin-left: 0.5rem;">CS368</sub></td>
+
+												<td style="text-align: center;">23</td>
+												<td style="text-align: center;">18</td>
+
+																								<td style="text-align: center;">78.26 %</td>
+												 
+												 
+
+											</tr> 
+										
+											
+
+
+											<tr> 
+												<td style="text-align: center;">PRINCIPLES OF MANAGEMENT <sub style="color: blue; margin-left: 0.5rem;">HS300 </sub></td>
+
+												<td style="text-align: center;">20</td>
+												<td style="text-align: center;">18</td>
+
+																								<td style="text-align: center;">90 %</td>
+												 
+												 
+
+											</tr> 
+										
+											
+
+
+											<tr> 
+												<td style="text-align: center;">PRINCIPLES OF MANAGEMENT <sub style="color: blue; margin-left: 0.5rem;">HS300</sub></td>
+
+												<td style="text-align: center;">20</td>
+												<td style="text-align: center;">18</td>
+
+																								<td style="text-align: center;">90 %</td>
+												 
+												 
+
+											</tr> 
+										
+											
+
+
+											<tr> 
+												<td style="text-align: center;">PRINCIPLES OF MANAGEMENT <sub style="color: blue; margin-left: 0.5rem;">HS300</sub></td>
+
+												<td style="text-align: center;">20</td>
+												<td style="text-align: center;">18</td>
+
+																								<td style="text-align: center;">90 %</td>
+												 
+												 
+
+											</tr> 
+										
+											
+
+
+											<tr> 
+												<td style="text-align: center;">PRINCIPLES OF MANAGEMENT <sub style="color: blue; margin-left: 0.5rem;">HS300</sub></td>
+
+												<td style="text-align: center;">20</td>
+												<td style="text-align: center;">18</td>
+
+																								<td style="text-align: center;">90 %</td>
+												 
+												 
+
+											</tr> 
+										
+										
+										<tr>
+
+											<td  colspan="2" style="text-align: center;">TOTAL</td>
+											<td  colspan="2" style="text-align: center;"> 89.47 % </td>
+										</tr> 
+
+
+										
+																			</tbody>
+
+
+
+								</table>
+
+
+
+
+								
+
+
+
+							<div style="margin-top: 1rem; padding: 1rem 0;">
+								<h4 style="float: left;">Detailed</h4>
+								<div  style="float: right;">
+									<select id="show-filer">
+										<option selected style="text-transform: uppercase;" value="w">all</option>
+										<option style="text-transform: uppercase;" value="d">duty_leave</option>
+										<option style="text-transform: uppercase;" value="p">PRESENT</option>
+										<option style="text-transform: uppercase;" value="a">ABSENT</option>
+									</select>
+								</div>
+							</div>
+
+							
+
+								<table class="table table-bordered table-hover" id="status-t">
+									<thead>
+										<tr>
+											<th>#</th>
+											<th>Date</th>
+											<th>Hour</th>
+											<th>Subject</th>
+											<th>Status</th>
+											<th>Duty Leave</th>
+										</tr>
+									</thead>
+									<tbody>
+										
+										
+											
+											<tr>
+												<td>1</td>
+												<td>05, Apr 2019 Fri</td>
+												<td>5</td>
+												<td>NETWORK PROGRAMMING LAB <sub>CS334</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>2</td>
+												<td>05, Apr 2019 Fri</td>
+												<td>4</td>
+												<td>NETWORK PROGRAMMING LAB <sub>CS334</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>3</td>
+												<td>05, Apr 2019 Fri</td>
+												<td>6</td>
+												<td>NETWORK PROGRAMMING LAB <sub>CS334</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>4</td>
+												<td>04, Apr 2019 Thu</td>
+												<td>5</td>
+												<td>SOFTWARE ENGINEERING AND PROJECT MANAGEMENT <sub>CS308</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>5</td>
+												<td>04, Apr 2019 Thu</td>
+												<td>1</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300 </sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>6</td>
+												<td>04, Apr 2019 Thu</td>
+												<td>1</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>7</td>
+												<td>04, Apr 2019 Thu</td>
+												<td>1</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>8</td>
+												<td>04, Apr 2019 Thu</td>
+												<td>1</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>9</td>
+												<td>03, Apr 2019 Wed</td>
+												<td>3</td>
+												<td>COMPUTER NETWORKS <sub>CS306</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>10</td>
+												<td>03, Apr 2019 Wed</td>
+												<td>2</td>
+												<td>SOFTWARE ENGINEERING AND PROJECT MANAGEMENT <sub>CS308</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>11</td>
+												<td>03, Apr 2019 Wed</td>
+												<td>1</td>
+												<td>SOFTWARE ENGINEERING AND PROJECT MANAGEMENT <sub>CS308</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>12</td>
+												<td>02, Apr 2019 Tue</td>
+												<td>3</td>
+												<td>COMPILER DESIGN <sub>CS304</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>13</td>
+												<td>02, Apr 2019 Tue</td>
+												<td>1</td>
+												<td>COMPUTER NETWORKS <sub>CS306</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>14</td>
+												<td>02, Apr 2019 Tue</td>
+												<td>5</td>
+												<td>MICROPROCESSOR LAB <sub>CS332</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>15</td>
+												<td>02, Apr 2019 Tue</td>
+												<td>6</td>
+												<td>MICROPROCESSOR LAB <sub>CS332</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>16</td>
+												<td>02, Apr 2019 Tue</td>
+												<td>4</td>
+												<td>MICROPROCESSOR LAB <sub>CS332</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>17</td>
+												<td>02, Apr 2019 Tue</td>
+												<td>2</td>
+												<td>COMPILER DESIGN <sub>CS304</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>18</td>
+												<td>01, Apr 2019 Mon</td>
+												<td>5</td>
+												<td>WEB TECHNOLOGIES <sub>CS368</sub></td>
+												<td><span class="show-my-st" status="a" style="color:red">ABSENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>19</td>
+												<td>01, Apr 2019 Mon</td>
+												<td>3</td>
+												<td>COMPILER DESIGN <sub>CS304</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>20</td>
+												<td>01, Apr 2019 Mon</td>
+												<td>1</td>
+												<td>COMPUTER NETWORKS <sub>CS306</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>21</td>
+												<td>01, Apr 2019 Mon</td>
+												<td>4</td>
+												<td>WEB TECHNOLOGIES <sub>CS368</sub></td>
+												<td><span class="show-my-st" status="a" style="color:red">ABSENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>22</td>
+												<td>30, Mar 2019 Sat</td>
+												<td>1</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300 </sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>23</td>
+												<td>30, Mar 2019 Sat</td>
+												<td>1</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>24</td>
+												<td>30, Mar 2019 Sat</td>
+												<td>1</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>25</td>
+												<td>30, Mar 2019 Sat</td>
+												<td>1</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>26</td>
+												<td>30, Mar 2019 Sat</td>
+												<td>2</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300 </sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>27</td>
+												<td>30, Mar 2019 Sat</td>
+												<td>2</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>28</td>
+												<td>30, Mar 2019 Sat</td>
+												<td>2</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>29</td>
+												<td>30, Mar 2019 Sat</td>
+												<td>2</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>30</td>
+												<td>30, Mar 2019 Sat</td>
+												<td>3</td>
+												<td>WEB TECHNOLOGIES <sub>CS368</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>31</td>
+												<td>30, Mar 2019 Sat</td>
+												<td>4</td>
+												<td>COMPUTER NETWORKS <sub>CS306</sub></td>
+												<td><span class="show-my-st" status="a" style="color:red">ABSENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>32</td>
+												<td>28, Mar 2019 Thu</td>
+												<td>5</td>
+												<td>SOFTWARE ENGINEERING AND PROJECT MANAGEMENT <sub>CS308</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>33</td>
+												<td>28, Mar 2019 Thu</td>
+												<td>1</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300 </sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>34</td>
+												<td>28, Mar 2019 Thu</td>
+												<td>1</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>35</td>
+												<td>28, Mar 2019 Thu</td>
+												<td>1</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>36</td>
+												<td>28, Mar 2019 Thu</td>
+												<td>1</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>37</td>
+												<td>28, Mar 2019 Thu</td>
+												<td>3</td>
+												<td>WEB TECHNOLOGIES <sub>CS368</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>38</td>
+												<td>28, Mar 2019 Thu</td>
+												<td>2</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300 </sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>39</td>
+												<td>28, Mar 2019 Thu</td>
+												<td>2</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>40</td>
+												<td>28, Mar 2019 Thu</td>
+												<td>2</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>41</td>
+												<td>28, Mar 2019 Thu</td>
+												<td>2</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>42</td>
+												<td>28, Mar 2019 Thu</td>
+												<td>6</td>
+												<td>COMPILER DESIGN <sub>CS304</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>43</td>
+												<td>28, Mar 2019 Thu</td>
+												<td>4</td>
+												<td>COMPUTER NETWORKS <sub>CS306</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>44</td>
+												<td>27, Mar 2019 Wed</td>
+												<td>6</td>
+												<td>COMPREHENSIVE EXAM <sub>CS352</sub></td>
+												<td><span class="show-my-st" status="a" style="color:red">ABSENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>45</td>
+												<td>27, Mar 2019 Wed</td>
+												<td>1</td>
+												<td>SOFTWARE ENGINEERING AND PROJECT MANAGEMENT <sub>CS308</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>46</td>
+												<td>27, Mar 2019 Wed</td>
+												<td>5</td>
+												<td>COMPREHENSIVE EXAM <sub>CS352</sub></td>
+												<td><span class="show-my-st" status="a" style="color:red">ABSENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>47</td>
+												<td>27, Mar 2019 Wed</td>
+												<td>3</td>
+												<td>COMPILER DESIGN <sub>CS304</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>48</td>
+												<td>27, Mar 2019 Wed</td>
+												<td>4</td>
+												<td>WEB TECHNOLOGIES <sub>CS368</sub></td>
+												<td><span class="show-my-st" status="a" style="color:red">ABSENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>49</td>
+												<td>26, Mar 2019 Tue</td>
+												<td>2</td>
+												<td>DESIGN AND ANALYSIS OF ALGORITHMS <sub>CS302</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>50</td>
+												<td>26, Mar 2019 Tue</td>
+												<td>3</td>
+												<td>COMPILER DESIGN <sub>CS304</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>51</td>
+												<td>26, Mar 2019 Tue</td>
+												<td>6</td>
+												<td>NETWORK PROGRAMMING LAB <sub>CS334</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>52</td>
+												<td>26, Mar 2019 Tue</td>
+												<td>5</td>
+												<td>NETWORK PROGRAMMING LAB <sub>CS334</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>53</td>
+												<td>26, Mar 2019 Tue</td>
+												<td>4</td>
+												<td>NETWORK PROGRAMMING LAB <sub>CS334</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>54</td>
+												<td>26, Mar 2019 Tue</td>
+												<td>1</td>
+												<td>COMPUTER NETWORKS <sub>CS306</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>55</td>
+												<td>25, Mar 2019 Mon</td>
+												<td>1</td>
+												<td>COMPUTER NETWORKS <sub>CS306</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>56</td>
+												<td>25, Mar 2019 Mon</td>
+												<td>3</td>
+												<td>SOFTWARE ENGINEERING AND PROJECT MANAGEMENT <sub>CS308</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>57</td>
+												<td>25, Mar 2019 Mon</td>
+												<td>2</td>
+												<td>SOFTWARE ENGINEERING AND PROJECT MANAGEMENT <sub>CS308</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>58</td>
+												<td>22, Mar 2019 Fri</td>
+												<td>3</td>
+												<td>MICROPROCESSOR LAB <sub>CS332</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>59</td>
+												<td>22, Mar 2019 Fri</td>
+												<td>2</td>
+												<td>MICROPROCESSOR LAB <sub>CS332</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>60</td>
+												<td>22, Mar 2019 Fri</td>
+												<td>1</td>
+												<td>MICROPROCESSOR LAB <sub>CS332</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>61</td>
+												<td>22, Mar 2019 Fri</td>
+												<td>4</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300 </sub></td>
+												<td><span class="show-my-st" status="a" style="color:red">ABSENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>62</td>
+												<td>22, Mar 2019 Fri</td>
+												<td>4</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300</sub></td>
+												<td><span class="show-my-st" status="a" style="color:red">ABSENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>63</td>
+												<td>22, Mar 2019 Fri</td>
+												<td>4</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300</sub></td>
+												<td><span class="show-my-st" status="a" style="color:red">ABSENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>64</td>
+												<td>22, Mar 2019 Fri</td>
+												<td>4</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300</sub></td>
+												<td><span class="show-my-st" status="a" style="color:red">ABSENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>65</td>
+												<td>21, Mar 2019 Thu</td>
+												<td>5</td>
+												<td>DESIGN AND ANALYSIS OF ALGORITHMS <sub>CS302</sub></td>
+												<td><span class="show-my-st" status="a" style="color:red">ABSENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>66</td>
+												<td>21, Mar 2019 Thu</td>
+												<td>1</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300 </sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>67</td>
+												<td>21, Mar 2019 Thu</td>
+												<td>1</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>68</td>
+												<td>21, Mar 2019 Thu</td>
+												<td>1</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>69</td>
+												<td>21, Mar 2019 Thu</td>
+												<td>1</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>70</td>
+												<td>21, Mar 2019 Thu</td>
+												<td>2</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300 </sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>71</td>
+												<td>21, Mar 2019 Thu</td>
+												<td>2</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>72</td>
+												<td>21, Mar 2019 Thu</td>
+												<td>2</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>73</td>
+												<td>21, Mar 2019 Thu</td>
+												<td>2</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>74</td>
+												<td>21, Mar 2019 Thu</td>
+												<td>3</td>
+												<td>WEB TECHNOLOGIES <sub>CS368</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>75</td>
+												<td>21, Mar 2019 Thu</td>
+												<td>4</td>
+												<td>DESIGN AND ANALYSIS OF ALGORITHMS <sub>CS302</sub></td>
+												<td><span class="show-my-st" status="a" style="color:red">ABSENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>76</td>
+												<td>20, Mar 2019 Wed</td>
+												<td>4</td>
+												<td>WEB TECHNOLOGIES <sub>CS368</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>77</td>
+												<td>20, Mar 2019 Wed</td>
+												<td>5</td>
+												<td>WEB TECHNOLOGIES <sub>CS368</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>78</td>
+												<td>20, Mar 2019 Wed</td>
+												<td>6</td>
+												<td>WEB TECHNOLOGIES <sub>CS368</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>79</td>
+												<td>19, Mar 2019 Tue</td>
+												<td>4</td>
+												<td>SOFTWARE ENGINEERING AND PROJECT MANAGEMENT <sub>CS308</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>80</td>
+												<td>19, Mar 2019 Tue</td>
+												<td>5</td>
+												<td>SOFTWARE ENGINEERING AND PROJECT MANAGEMENT <sub>CS308</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>81</td>
+												<td>19, Mar 2019 Tue</td>
+												<td>6</td>
+												<td>SOFTWARE ENGINEERING AND PROJECT MANAGEMENT <sub>CS308</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>82</td>
+												<td>19, Mar 2019 Tue</td>
+												<td>1</td>
+												<td>COMPUTER NETWORKS <sub>CS306</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>83</td>
+												<td>19, Mar 2019 Tue</td>
+												<td>2</td>
+												<td>COMPUTER NETWORKS <sub>CS306</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>84</td>
+												<td>19, Mar 2019 Tue</td>
+												<td>3</td>
+												<td>COMPUTER NETWORKS <sub>CS306</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>85</td>
+												<td>18, Mar 2019 Mon</td>
+												<td>4</td>
+												<td>COMPILER DESIGN <sub>CS304</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>86</td>
+												<td>18, Mar 2019 Mon</td>
+												<td>1</td>
+												<td>DESIGN AND ANALYSIS OF ALGORITHMS <sub>CS302</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>87</td>
+												<td>18, Mar 2019 Mon</td>
+												<td>2</td>
+												<td>DESIGN AND ANALYSIS OF ALGORITHMS <sub>CS302</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>88</td>
+												<td>18, Mar 2019 Mon</td>
+												<td>3</td>
+												<td>DESIGN AND ANALYSIS OF ALGORITHMS <sub>CS302</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>89</td>
+												<td>18, Mar 2019 Mon</td>
+												<td>5</td>
+												<td>COMPILER DESIGN <sub>CS304</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>90</td>
+												<td>18, Mar 2019 Mon</td>
+												<td>6</td>
+												<td>COMPILER DESIGN <sub>CS304</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>91</td>
+												<td>15, Mar 2019 Fri</td>
+												<td>2</td>
+												<td>NETWORK PROGRAMMING LAB <sub>CS334</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>92</td>
+												<td>15, Mar 2019 Fri</td>
+												<td>5</td>
+												<td>DESIGN AND ANALYSIS OF ALGORITHMS <sub>CS302</sub></td>
+												<td><span class="show-my-st" status="a" style="color:red">ABSENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>93</td>
+												<td>15, Mar 2019 Fri</td>
+												<td>6</td>
+												<td>DESIGN AND ANALYSIS OF ALGORITHMS <sub>CS302</sub></td>
+												<td><span class="show-my-st" status="a" style="color:red">ABSENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>94</td>
+												<td>15, Mar 2019 Fri</td>
+												<td>1</td>
+												<td>NETWORK PROGRAMMING LAB <sub>CS334</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>95</td>
+												<td>15, Mar 2019 Fri</td>
+												<td>3</td>
+												<td>NETWORK PROGRAMMING LAB <sub>CS334</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>96</td>
+												<td>14, Mar 2019 Thu</td>
+												<td>5</td>
+												<td>SOFTWARE ENGINEERING AND PROJECT MANAGEMENT <sub>CS308</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>97</td>
+												<td>14, Mar 2019 Thu</td>
+												<td>3</td>
+												<td>WEB TECHNOLOGIES <sub>CS368</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>98</td>
+												<td>14, Mar 2019 Thu</td>
+												<td>6</td>
+												<td>COMPILER DESIGN <sub>CS304</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>99</td>
+												<td>14, Mar 2019 Thu</td>
+												<td>4</td>
+												<td>DESIGN AND ANALYSIS OF ALGORITHMS <sub>CS302</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>100</td>
+												<td>14, Mar 2019 Thu</td>
+												<td>1</td>
+												<td>DESIGN AND ANALYSIS OF ALGORITHMS <sub>CS302</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>101</td>
+												<td>13, Mar 2019 Wed</td>
+												<td>5</td>
+												<td>COMPREHENSIVE EXAM <sub>CS352</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>102</td>
+												<td>13, Mar 2019 Wed</td>
+												<td>1</td>
+												<td>SOFTWARE ENGINEERING AND PROJECT MANAGEMENT <sub>CS308</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>103</td>
+												<td>13, Mar 2019 Wed</td>
+												<td>2</td>
+												<td>SOFTWARE ENGINEERING AND PROJECT MANAGEMENT <sub>CS308</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>104</td>
+												<td>13, Mar 2019 Wed</td>
+												<td>6</td>
+												<td>COMPREHENSIVE EXAM <sub>CS352</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>105</td>
+												<td>12, Mar 2019 Tue</td>
+												<td>5</td>
+												<td>MICROPROCESSOR LAB <sub>CS332</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>106</td>
+												<td>12, Mar 2019 Tue</td>
+												<td>6</td>
+												<td>MICROPROCESSOR LAB <sub>CS332</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>107</td>
+												<td>12, Mar 2019 Tue</td>
+												<td>1</td>
+												<td>COMPUTER NETWORKS <sub>CS306</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>108</td>
+												<td>12, Mar 2019 Tue</td>
+												<td>2</td>
+												<td>DESIGN AND ANALYSIS OF ALGORITHMS <sub>CS302</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>109</td>
+												<td>12, Mar 2019 Tue</td>
+												<td>4</td>
+												<td>MICROPROCESSOR LAB <sub>CS332</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>110</td>
+												<td>11, Mar 2019 Mon</td>
+												<td>4</td>
+												<td>WEB TECHNOLOGIES <sub>CS368</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>111</td>
+												<td>11, Mar 2019 Mon</td>
+												<td>2</td>
+												<td>SOFTWARE ENGINEERING AND PROJECT MANAGEMENT <sub>CS308</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>112</td>
+												<td>11, Mar 2019 Mon</td>
+												<td>1</td>
+												<td>COMPUTER NETWORKS <sub>CS306</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>113</td>
+												<td>11, Mar 2019 Mon</td>
+												<td>5</td>
+												<td>WEB TECHNOLOGIES <sub>CS368</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>114</td>
+												<td>11, Mar 2019 Mon</td>
+												<td>3</td>
+												<td>DESIGN AND ANALYSIS OF ALGORITHMS <sub>CS302</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>115</td>
+												<td>11, Mar 2019 Mon</td>
+												<td>6</td>
+												<td>DESIGN AND ANALYSIS OF ALGORITHMS <sub>CS302</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>116</td>
+												<td>08, Mar 2019 Fri</td>
+												<td>2</td>
+												<td>NETWORK PROGRAMMING LAB <sub>CS334</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>117</td>
+												<td>08, Mar 2019 Fri</td>
+												<td>3</td>
+												<td>NETWORK PROGRAMMING LAB <sub>CS334</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>118</td>
+												<td>08, Mar 2019 Fri</td>
+												<td>1</td>
+												<td>NETWORK PROGRAMMING LAB <sub>CS334</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>119</td>
+												<td>08, Mar 2019 Fri</td>
+												<td>5</td>
+												<td>DESIGN AND ANALYSIS OF ALGORITHMS <sub>CS302</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>120</td>
+												<td>07, Mar 2019 Thu</td>
+												<td>4</td>
+												<td>WEB TECHNOLOGIES <sub>CS368</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>121</td>
+												<td>07, Mar 2019 Thu</td>
+												<td>5</td>
+												<td>COMPUTER NETWORKS <sub>CS306</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>122</td>
+												<td>07, Mar 2019 Thu</td>
+												<td>1</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300 </sub></td>
+												<td><span class="show-my-st" status="a" style="color:red">ABSENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>123</td>
+												<td>07, Mar 2019 Thu</td>
+												<td>1</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300</sub></td>
+												<td><span class="show-my-st" status="a" style="color:red">ABSENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>124</td>
+												<td>07, Mar 2019 Thu</td>
+												<td>1</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300</sub></td>
+												<td><span class="show-my-st" status="a" style="color:red">ABSENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>125</td>
+												<td>07, Mar 2019 Thu</td>
+												<td>1</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300</sub></td>
+												<td><span class="show-my-st" status="a" style="color:red">ABSENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>126</td>
+												<td>07, Mar 2019 Thu</td>
+												<td>2</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300 </sub></td>
+												<td><span class="show-my-st" status="d" style="color:#2196f3">PRESENT</span></td>
+												<td>
+													TREASURE HUNT COMPETITION-CIVIL DEPT.												</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>127</td>
+												<td>07, Mar 2019 Thu</td>
+												<td>2</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300</sub></td>
+												<td><span class="show-my-st" status="d" style="color:#2196f3">PRESENT</span></td>
+												<td>
+													TREASURE HUNT COMPETITION-CIVIL DEPT.												</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>128</td>
+												<td>07, Mar 2019 Thu</td>
+												<td>2</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300</sub></td>
+												<td><span class="show-my-st" status="d" style="color:#2196f3">PRESENT</span></td>
+												<td>
+													TREASURE HUNT COMPETITION-CIVIL DEPT.												</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>129</td>
+												<td>07, Mar 2019 Thu</td>
+												<td>2</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300</sub></td>
+												<td><span class="show-my-st" status="d" style="color:#2196f3">PRESENT</span></td>
+												<td>
+													TREASURE HUNT COMPETITION-CIVIL DEPT.												</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>130</td>
+												<td>07, Mar 2019 Thu</td>
+												<td>6</td>
+												<td>SOFTWARE ENGINEERING AND PROJECT MANAGEMENT <sub>CS308</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>131</td>
+												<td>06, Mar 2019 Wed</td>
+												<td>5</td>
+												<td>COMPREHENSIVE EXAM <sub>CS352</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>132</td>
+												<td>06, Mar 2019 Wed</td>
+												<td>4</td>
+												<td>WEB TECHNOLOGIES <sub>CS368</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>133</td>
+												<td>06, Mar 2019 Wed</td>
+												<td>2</td>
+												<td>SOFTWARE ENGINEERING AND PROJECT MANAGEMENT <sub>CS308</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>134</td>
+												<td>06, Mar 2019 Wed</td>
+												<td>1</td>
+												<td>SOFTWARE ENGINEERING AND PROJECT MANAGEMENT <sub>CS308</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>135</td>
+												<td>06, Mar 2019 Wed</td>
+												<td>6</td>
+												<td>COMPREHENSIVE EXAM <sub>CS352</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>136</td>
+												<td>05, Mar 2019 Tue</td>
+												<td>3</td>
+												<td>DESIGN AND ANALYSIS OF ALGORITHMS <sub>CS302</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>137</td>
+												<td>05, Mar 2019 Tue</td>
+												<td>2</td>
+												<td>DESIGN AND ANALYSIS OF ALGORITHMS <sub>CS302</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>138</td>
+												<td>05, Mar 2019 Tue</td>
+												<td>6</td>
+												<td>MICROPROCESSOR LAB <sub>CS332</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>139</td>
+												<td>05, Mar 2019 Tue</td>
+												<td>5</td>
+												<td>MICROPROCESSOR LAB <sub>CS332</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>140</td>
+												<td>05, Mar 2019 Tue</td>
+												<td>4</td>
+												<td>MICROPROCESSOR LAB <sub>CS332</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>141</td>
+												<td>05, Mar 2019 Tue</td>
+												<td>1</td>
+												<td>COMPUTER NETWORKS <sub>CS306</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>142</td>
+												<td>01, Mar 2019 Fri</td>
+												<td>1</td>
+												<td>NETWORK PROGRAMMING LAB <sub>CS334</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>143</td>
+												<td>01, Mar 2019 Fri</td>
+												<td>3</td>
+												<td>NETWORK PROGRAMMING LAB <sub>CS334</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>144</td>
+												<td>01, Mar 2019 Fri</td>
+												<td>2</td>
+												<td>NETWORK PROGRAMMING LAB <sub>CS334</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>145</td>
+												<td>28, Feb 2019 Thu</td>
+												<td>2</td>
+												<td>DESIGN AND ANALYSIS OF ALGORITHMS <sub>CS302</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>146</td>
+												<td>28, Feb 2019 Thu</td>
+												<td>1</td>
+												<td>DESIGN AND ANALYSIS OF ALGORITHMS <sub>CS302</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>147</td>
+												<td>27, Feb 2019 Wed</td>
+												<td>6</td>
+												<td>COMPREHENSIVE EXAM <sub>CS352</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>148</td>
+												<td>27, Feb 2019 Wed</td>
+												<td>5</td>
+												<td>COMPREHENSIVE EXAM <sub>CS352</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>149</td>
+												<td>27, Feb 2019 Wed</td>
+												<td>1</td>
+												<td>SOFTWARE ENGINEERING AND PROJECT MANAGEMENT <sub>CS308</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>150</td>
+												<td>26, Feb 2019 Tue</td>
+												<td>6</td>
+												<td>MICROPROCESSOR LAB <sub>CS332</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>151</td>
+												<td>26, Feb 2019 Tue</td>
+												<td>5</td>
+												<td>MICROPROCESSOR LAB <sub>CS332</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>152</td>
+												<td>26, Feb 2019 Tue</td>
+												<td>4</td>
+												<td>MICROPROCESSOR LAB <sub>CS332</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>153</td>
+												<td>25, Feb 2019 Mon</td>
+												<td>3</td>
+												<td>DESIGN AND ANALYSIS OF ALGORITHMS <sub>CS302</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>154</td>
+												<td>25, Feb 2019 Mon</td>
+												<td>2</td>
+												<td>DESIGN AND ANALYSIS OF ALGORITHMS <sub>CS302</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>155</td>
+												<td>25, Feb 2019 Mon</td>
+												<td>5</td>
+												<td>DESIGN AND ANALYSIS OF ALGORITHMS <sub>CS302</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>156</td>
+												<td>22, Feb 2019 Fri</td>
+												<td>1</td>
+												<td>NETWORK PROGRAMMING LAB <sub>CS334</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>157</td>
+												<td>22, Feb 2019 Fri</td>
+												<td>3</td>
+												<td>NETWORK PROGRAMMING LAB <sub>CS334</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>158</td>
+												<td>22, Feb 2019 Fri</td>
+												<td>2</td>
+												<td>NETWORK PROGRAMMING LAB <sub>CS334</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>159</td>
+												<td>21, Feb 2019 Thu</td>
+												<td>5</td>
+												<td>DESIGN AND ANALYSIS OF ALGORITHMS <sub>CS302</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>160</td>
+												<td>21, Feb 2019 Thu</td>
+												<td>6</td>
+												<td>DESIGN AND ANALYSIS OF ALGORITHMS <sub>CS302</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>161</td>
+												<td>21, Feb 2019 Thu</td>
+												<td>2</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300 </sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>162</td>
+												<td>21, Feb 2019 Thu</td>
+												<td>2</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>163</td>
+												<td>21, Feb 2019 Thu</td>
+												<td>2</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>164</td>
+												<td>21, Feb 2019 Thu</td>
+												<td>2</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>165</td>
+												<td>21, Feb 2019 Thu</td>
+												<td>1</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300 </sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>166</td>
+												<td>21, Feb 2019 Thu</td>
+												<td>1</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>167</td>
+												<td>21, Feb 2019 Thu</td>
+												<td>1</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>168</td>
+												<td>21, Feb 2019 Thu</td>
+												<td>1</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>169</td>
+												<td>20, Feb 2019 Wed</td>
+												<td>6</td>
+												<td>COMPREHENSIVE EXAM <sub>CS352</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>170</td>
+												<td>20, Feb 2019 Wed</td>
+												<td>5</td>
+												<td>COMPREHENSIVE EXAM <sub>CS352</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>171</td>
+												<td>20, Feb 2019 Wed</td>
+												<td>1</td>
+												<td>SOFTWARE ENGINEERING AND PROJECT MANAGEMENT <sub>CS308</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>172</td>
+												<td>20, Feb 2019 Wed</td>
+												<td>2</td>
+												<td>SOFTWARE ENGINEERING AND PROJECT MANAGEMENT <sub>CS308</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>173</td>
+												<td>19, Feb 2019 Tue</td>
+												<td>6</td>
+												<td>MICROPROCESSOR LAB <sub>CS332</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>174</td>
+												<td>19, Feb 2019 Tue</td>
+												<td>5</td>
+												<td>MICROPROCESSOR LAB <sub>CS332</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>175</td>
+												<td>19, Feb 2019 Tue</td>
+												<td>4</td>
+												<td>MICROPROCESSOR LAB <sub>CS332</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>176</td>
+												<td>19, Feb 2019 Tue</td>
+												<td>2</td>
+												<td>DESIGN AND ANALYSIS OF ALGORITHMS <sub>CS302</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>177</td>
+												<td>18, Feb 2019 Mon</td>
+												<td>1</td>
+												<td>COMPUTER NETWORKS <sub>CS306</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>178</td>
+												<td>15, Feb 2019 Fri</td>
+												<td>2</td>
+												<td>NETWORK PROGRAMMING LAB <sub>CS334</sub></td>
+												<td><span class="show-my-st" status="d" style="color:#2196f3">PRESENT</span></td>
+												<td>
+													ATTENDING TECH FEST-NAKSHATRA												</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>179</td>
+												<td>15, Feb 2019 Fri</td>
+												<td>3</td>
+												<td>NETWORK PROGRAMMING LAB <sub>CS334</sub></td>
+												<td><span class="show-my-st" status="d" style="color:#2196f3">PRESENT</span></td>
+												<td>
+													ATTENDING TECH FEST- NAKSHATRA												</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>180</td>
+												<td>15, Feb 2019 Fri</td>
+												<td>1</td>
+												<td>NETWORK PROGRAMMING LAB <sub>CS334</sub></td>
+												<td><span class="show-my-st" status="d" style="color:#2196f3">PRESENT</span></td>
+												<td>
+													ATTENDING TECH FEST- NAKSHATRA												</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>181</td>
+												<td>15, Feb 2019 Fri</td>
+												<td>4</td>
+												<td>DESIGN AND ANALYSIS OF ALGORITHMS <sub>CS302</sub></td>
+												<td><span class="show-my-st" status="d" style="color:#2196f3">PRESENT</span></td>
+												<td>
+													ATTENDING TECH FEST- NAKSHATRA												</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>182</td>
+												<td>15, Feb 2019 Fri</td>
+												<td>5</td>
+												<td>DESIGN AND ANALYSIS OF ALGORITHMS <sub>CS302</sub></td>
+												<td><span class="show-my-st" status="d" style="color:#2196f3">PRESENT</span></td>
+												<td>
+													ATTENDING TECH FEST- NAKSHATRA												</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>183</td>
+												<td>14, Feb 2019 Thu</td>
+												<td>1</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300 </sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>184</td>
+												<td>14, Feb 2019 Thu</td>
+												<td>1</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>185</td>
+												<td>14, Feb 2019 Thu</td>
+												<td>1</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>186</td>
+												<td>14, Feb 2019 Thu</td>
+												<td>1</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>187</td>
+												<td>14, Feb 2019 Thu</td>
+												<td>2</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300 </sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>188</td>
+												<td>14, Feb 2019 Thu</td>
+												<td>2</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>189</td>
+												<td>14, Feb 2019 Thu</td>
+												<td>2</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>190</td>
+												<td>14, Feb 2019 Thu</td>
+												<td>2</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>191</td>
+												<td>14, Feb 2019 Thu</td>
+												<td>5</td>
+												<td>DESIGN AND ANALYSIS OF ALGORITHMS <sub>CS302</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>192</td>
+												<td>14, Feb 2019 Thu</td>
+												<td>3</td>
+												<td>WEB TECHNOLOGIES <sub>CS368</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>193</td>
+												<td>14, Feb 2019 Thu</td>
+												<td>4</td>
+												<td>DESIGN AND ANALYSIS OF ALGORITHMS <sub>CS302</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>194</td>
+												<td>13, Feb 2019 Wed</td>
+												<td>4</td>
+												<td>WEB TECHNOLOGIES <sub>CS368</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>195</td>
+												<td>13, Feb 2019 Wed</td>
+												<td>6</td>
+												<td>COMPREHENSIVE EXAM <sub>CS352</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>196</td>
+												<td>13, Feb 2019 Wed</td>
+												<td>5</td>
+												<td>COMPREHENSIVE EXAM <sub>CS352</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>197</td>
+												<td>13, Feb 2019 Wed</td>
+												<td>2</td>
+												<td>SOFTWARE ENGINEERING AND PROJECT MANAGEMENT <sub>CS308</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>198</td>
+												<td>13, Feb 2019 Wed</td>
+												<td>3</td>
+												<td>COMPILER DESIGN <sub>CS304</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>199</td>
+												<td>13, Feb 2019 Wed</td>
+												<td>1</td>
+												<td>SOFTWARE ENGINEERING AND PROJECT MANAGEMENT <sub>CS308</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>200</td>
+												<td>12, Feb 2019 Tue</td>
+												<td>4</td>
+												<td>MICROPROCESSOR LAB <sub>CS332</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>201</td>
+												<td>12, Feb 2019 Tue</td>
+												<td>1</td>
+												<td>COMPUTER NETWORKS <sub>CS306</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>202</td>
+												<td>12, Feb 2019 Tue</td>
+												<td>5</td>
+												<td>MICROPROCESSOR LAB <sub>CS332</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>203</td>
+												<td>12, Feb 2019 Tue</td>
+												<td>6</td>
+												<td>MICROPROCESSOR LAB <sub>CS332</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>204</td>
+												<td>12, Feb 2019 Tue</td>
+												<td>3</td>
+												<td>COMPILER DESIGN <sub>CS304</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>205</td>
+												<td>12, Feb 2019 Tue</td>
+												<td>2</td>
+												<td>DESIGN AND ANALYSIS OF ALGORITHMS <sub>CS302</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>206</td>
+												<td>11, Feb 2019 Mon</td>
+												<td>3</td>
+												<td>DESIGN AND ANALYSIS OF ALGORITHMS <sub>CS302</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>207</td>
+												<td>11, Feb 2019 Mon</td>
+												<td>4</td>
+												<td>WEB TECHNOLOGIES <sub>CS368</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>208</td>
+												<td>11, Feb 2019 Mon</td>
+												<td>1</td>
+												<td>COMPUTER NETWORKS <sub>CS306</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>209</td>
+												<td>11, Feb 2019 Mon</td>
+												<td>5</td>
+												<td>DESIGN AND ANALYSIS OF ALGORITHMS <sub>CS302</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>210</td>
+												<td>11, Feb 2019 Mon</td>
+												<td>2</td>
+												<td>SOFTWARE ENGINEERING AND PROJECT MANAGEMENT <sub>CS308</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>211</td>
+												<td>08, Feb 2019 Fri</td>
+												<td>1</td>
+												<td>NETWORK PROGRAMMING LAB <sub>CS334</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>212</td>
+												<td>08, Feb 2019 Fri</td>
+												<td>5</td>
+												<td>DESIGN AND ANALYSIS OF ALGORITHMS <sub>CS302</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>213</td>
+												<td>08, Feb 2019 Fri</td>
+												<td>6</td>
+												<td>DESIGN AND ANALYSIS OF ALGORITHMS <sub>CS302</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>214</td>
+												<td>08, Feb 2019 Fri</td>
+												<td>4</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300 </sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>215</td>
+												<td>08, Feb 2019 Fri</td>
+												<td>4</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>216</td>
+												<td>08, Feb 2019 Fri</td>
+												<td>4</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>217</td>
+												<td>08, Feb 2019 Fri</td>
+												<td>4</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>218</td>
+												<td>08, Feb 2019 Fri</td>
+												<td>3</td>
+												<td>NETWORK PROGRAMMING LAB <sub>CS334</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>219</td>
+												<td>08, Feb 2019 Fri</td>
+												<td>2</td>
+												<td>NETWORK PROGRAMMING LAB <sub>CS334</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>220</td>
+												<td>07, Feb 2019 Thu</td>
+												<td>6</td>
+												<td>COMPILER DESIGN <sub>CS304</sub></td>
+												<td><span class="show-my-st" status="d" style="color:#2196f3">PRESENT</span></td>
+												<td>
+													TECH FEST-ASTHRA												</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>221</td>
+												<td>07, Feb 2019 Thu</td>
+												<td>5</td>
+												<td>SOFTWARE ENGINEERING AND PROJECT MANAGEMENT <sub>CS308</sub></td>
+												<td><span class="show-my-st" status="d" style="color:#2196f3">PRESENT</span></td>
+												<td>
+													TECH FEST-ASTHRA												</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>222</td>
+												<td>07, Feb 2019 Thu</td>
+												<td>3</td>
+												<td>WEB TECHNOLOGIES <sub>CS368</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>223</td>
+												<td>07, Feb 2019 Thu</td>
+												<td>1</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300 </sub></td>
+												<td><span class="show-my-st" status="d" style="color:#2196f3">PRESENT</span></td>
+												<td>
+													TECH FEST-ASTHRA												</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>224</td>
+												<td>07, Feb 2019 Thu</td>
+												<td>1</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300</sub></td>
+												<td><span class="show-my-st" status="d" style="color:#2196f3">PRESENT</span></td>
+												<td>
+													TECH FEST-ASTHRA												</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>225</td>
+												<td>07, Feb 2019 Thu</td>
+												<td>1</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300</sub></td>
+												<td><span class="show-my-st" status="d" style="color:#2196f3">PRESENT</span></td>
+												<td>
+													TECH FEST-ASTHRA												</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>226</td>
+												<td>07, Feb 2019 Thu</td>
+												<td>1</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300</sub></td>
+												<td><span class="show-my-st" status="d" style="color:#2196f3">PRESENT</span></td>
+												<td>
+													TECH FEST-ASTHRA												</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>227</td>
+												<td>07, Feb 2019 Thu</td>
+												<td>2</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300 </sub></td>
+												<td><span class="show-my-st" status="d" style="color:#2196f3">PRESENT</span></td>
+												<td>
+													TECH FEST-ASTHRA												</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>228</td>
+												<td>07, Feb 2019 Thu</td>
+												<td>2</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300</sub></td>
+												<td><span class="show-my-st" status="d" style="color:#2196f3">PRESENT</span></td>
+												<td>
+													TECH FEST-ASTHRA												</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>229</td>
+												<td>07, Feb 2019 Thu</td>
+												<td>2</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300</sub></td>
+												<td><span class="show-my-st" status="d" style="color:#2196f3">PRESENT</span></td>
+												<td>
+													TECH FEST-ASTHRA												</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>230</td>
+												<td>07, Feb 2019 Thu</td>
+												<td>2</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300</sub></td>
+												<td><span class="show-my-st" status="d" style="color:#2196f3">PRESENT</span></td>
+												<td>
+													TECH FEST-ASTHRA												</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>231</td>
+												<td>07, Feb 2019 Thu</td>
+												<td>4</td>
+												<td>DESIGN AND ANALYSIS OF ALGORITHMS <sub>CS302</sub></td>
+												<td><span class="show-my-st" status="d" style="color:#2196f3">PRESENT</span></td>
+												<td>
+													TECH FEST-ASTHRA												</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>232</td>
+												<td>06, Feb 2019 Wed</td>
+												<td>1</td>
+												<td>DESIGN AND ANALYSIS OF ALGORITHMS <sub>CS302</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>233</td>
+												<td>06, Feb 2019 Wed</td>
+												<td>3</td>
+												<td>COMPILER DESIGN <sub>CS304</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>234</td>
+												<td>06, Feb 2019 Wed</td>
+												<td>2</td>
+												<td>COMPUTER NETWORKS <sub>CS306</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>235</td>
+												<td>06, Feb 2019 Wed</td>
+												<td>5</td>
+												<td>COMPREHENSIVE EXAM <sub>CS352</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>236</td>
+												<td>06, Feb 2019 Wed</td>
+												<td>6</td>
+												<td>COMPREHENSIVE EXAM <sub>CS352</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>237</td>
+												<td>06, Feb 2019 Wed</td>
+												<td>4</td>
+												<td>WEB TECHNOLOGIES <sub>CS368</sub></td>
+												<td><span class="show-my-st" status="a" style="color:red">ABSENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>238</td>
+												<td>05, Feb 2019 Tue</td>
+												<td>3</td>
+												<td>COMPUTER NETWORKS <sub>CS306</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>239</td>
+												<td>05, Feb 2019 Tue</td>
+												<td>2</td>
+												<td>DESIGN AND ANALYSIS OF ALGORITHMS <sub>CS302</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>240</td>
+												<td>05, Feb 2019 Tue</td>
+												<td>4</td>
+												<td>MICROPROCESSOR LAB <sub>CS332</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>241</td>
+												<td>05, Feb 2019 Tue</td>
+												<td>5</td>
+												<td>MICROPROCESSOR LAB <sub>CS332</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>242</td>
+												<td>05, Feb 2019 Tue</td>
+												<td>6</td>
+												<td>MICROPROCESSOR LAB <sub>CS332</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>243</td>
+												<td>05, Feb 2019 Tue</td>
+												<td>1</td>
+												<td>COMPILER DESIGN <sub>CS304</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>244</td>
+												<td>04, Feb 2019 Mon</td>
+												<td>4</td>
+												<td>WEB TECHNOLOGIES <sub>CS368</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>245</td>
+												<td>04, Feb 2019 Mon</td>
+												<td>1</td>
+												<td>COMPUTER NETWORKS <sub>CS306</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>246</td>
+												<td>04, Feb 2019 Mon</td>
+												<td>2</td>
+												<td>SOFTWARE ENGINEERING AND PROJECT MANAGEMENT <sub>CS308</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>247</td>
+												<td>04, Feb 2019 Mon</td>
+												<td>3</td>
+												<td>DESIGN AND ANALYSIS OF ALGORITHMS <sub>CS302</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>248</td>
+												<td>04, Feb 2019 Mon</td>
+												<td>5</td>
+												<td>DESIGN AND ANALYSIS OF ALGORITHMS <sub>CS302</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>249</td>
+												<td>01, Feb 2019 Fri</td>
+												<td>1</td>
+												<td>NETWORK PROGRAMMING LAB <sub>CS334</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>250</td>
+												<td>01, Feb 2019 Fri</td>
+												<td>2</td>
+												<td>NETWORK PROGRAMMING LAB <sub>CS334</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>251</td>
+												<td>01, Feb 2019 Fri</td>
+												<td>3</td>
+												<td>NETWORK PROGRAMMING LAB <sub>CS334</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>252</td>
+												<td>01, Feb 2019 Fri</td>
+												<td>4</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300 </sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>253</td>
+												<td>01, Feb 2019 Fri</td>
+												<td>4</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>254</td>
+												<td>01, Feb 2019 Fri</td>
+												<td>4</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>255</td>
+												<td>01, Feb 2019 Fri</td>
+												<td>4</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>256</td>
+												<td>01, Feb 2019 Fri</td>
+												<td>5</td>
+												<td>DESIGN AND ANALYSIS OF ALGORITHMS <sub>CS302</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>257</td>
+												<td>31, Jan 2019 Thu</td>
+												<td>2</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300 </sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>258</td>
+												<td>31, Jan 2019 Thu</td>
+												<td>2</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>259</td>
+												<td>31, Jan 2019 Thu</td>
+												<td>2</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>260</td>
+												<td>31, Jan 2019 Thu</td>
+												<td>2</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>261</td>
+												<td>31, Jan 2019 Thu</td>
+												<td>5</td>
+												<td>COMPILER DESIGN <sub>CS304</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>262</td>
+												<td>31, Jan 2019 Thu</td>
+												<td>6</td>
+												<td>COMPILER DESIGN <sub>CS304</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>263</td>
+												<td>31, Jan 2019 Thu</td>
+												<td>4</td>
+												<td>DESIGN AND ANALYSIS OF ALGORITHMS <sub>CS302</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>264</td>
+												<td>31, Jan 2019 Thu</td>
+												<td>3</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300 </sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>265</td>
+												<td>31, Jan 2019 Thu</td>
+												<td>3</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>266</td>
+												<td>31, Jan 2019 Thu</td>
+												<td>3</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>267</td>
+												<td>31, Jan 2019 Thu</td>
+												<td>3</td>
+												<td>PRINCIPLES OF MANAGEMENT <sub>HS300</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>268</td>
+												<td>31, Jan 2019 Thu</td>
+												<td>1</td>
+												<td>WEB TECHNOLOGIES <sub>CS368</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>269</td>
+												<td>30, Jan 2019 Wed</td>
+												<td>1</td>
+												<td>SOFTWARE ENGINEERING AND PROJECT MANAGEMENT <sub>CS308</sub></td>
+												<td><span class="show-my-st" status="a" style="color:red">ABSENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>270</td>
+												<td>30, Jan 2019 Wed</td>
+												<td>4</td>
+												<td>COMPUTER NETWORKS <sub>CS306</sub></td>
+												<td><span class="show-my-st" status="a" style="color:red">ABSENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>271</td>
+												<td>30, Jan 2019 Wed</td>
+												<td>2</td>
+												<td>COMPUTER NETWORKS <sub>CS306</sub></td>
+												<td><span class="show-my-st" status="a" style="color:red">ABSENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>272</td>
+												<td>30, Jan 2019 Wed</td>
+												<td>3</td>
+												<td>COMPILER DESIGN <sub>CS304</sub></td>
+												<td><span class="show-my-st" status="a" style="color:red">ABSENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>273</td>
+												<td>30, Jan 2019 Wed</td>
+												<td>6</td>
+												<td>COMPREHENSIVE EXAM <sub>CS352</sub></td>
+												<td><span class="show-my-st" status="a" style="color:red">ABSENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>274</td>
+												<td>30, Jan 2019 Wed</td>
+												<td>5</td>
+												<td>COMPREHENSIVE EXAM <sub>CS352</sub></td>
+												<td><span class="show-my-st" status="a" style="color:red">ABSENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>275</td>
+												<td>29, Jan 2019 Tue</td>
+												<td>6</td>
+												<td>MICROPROCESSOR LAB <sub>CS332</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>276</td>
+												<td>29, Jan 2019 Tue</td>
+												<td>2</td>
+												<td>DESIGN AND ANALYSIS OF ALGORITHMS <sub>CS302</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>277</td>
+												<td>29, Jan 2019 Tue</td>
+												<td>3</td>
+												<td>DESIGN AND ANALYSIS OF ALGORITHMS <sub>CS302</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>278</td>
+												<td>29, Jan 2019 Tue</td>
+												<td>1</td>
+												<td>WEB TECHNOLOGIES <sub>CS368</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>279</td>
+												<td>29, Jan 2019 Tue</td>
+												<td>5</td>
+												<td>MICROPROCESSOR LAB <sub>CS332</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>280</td>
+												<td>29, Jan 2019 Tue</td>
+												<td>4</td>
+												<td>MICROPROCESSOR LAB <sub>CS332</sub></td>
+												<td><span class="show-my-st" status="p" style="color:green">PRESENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>281</td>
+												<td>28, Jan 2019 Mon</td>
+												<td>2</td>
+												<td>SOFTWARE ENGINEERING AND PROJECT MANAGEMENT <sub>CS308</sub></td>
+												<td><span class="show-my-st" status="a" style="color:red">ABSENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>282</td>
+												<td>28, Jan 2019 Mon</td>
+												<td>3</td>
+												<td>DESIGN AND ANALYSIS OF ALGORITHMS <sub>CS302</sub></td>
+												<td><span class="show-my-st" status="a" style="color:red">ABSENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>283</td>
+												<td>28, Jan 2019 Mon</td>
+												<td>5</td>
+												<td>DESIGN AND ANALYSIS OF ALGORITHMS <sub>CS302</sub></td>
+												<td><span class="show-my-st" status="a" style="color:red">ABSENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>284</td>
+												<td>28, Jan 2019 Mon</td>
+												<td>4</td>
+												<td>WEB TECHNOLOGIES <sub>CS368</sub></td>
+												<td><span class="show-my-st" status="a" style="color:red">ABSENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+										
+											
+											<tr>
+												<td>285</td>
+												<td>28, Jan 2019 Mon</td>
+												<td>1</td>
+												<td>COMPUTER NETWORKS <sub>CS306</sub></td>
+												<td><span class="show-my-st" status="a" style="color:red">ABSENT</span></td>
+												<td>
+																									</td>
+
+
+
+											</tr>
+
+
+
+																																																	</tbody>
+
+
+
+								</table>
+
+
+
+
+															</tbody>
+						</div>
+					</table>     
+
+
+					
+<script>
+    function PrintElem(elem)
+    {
+        var mywindow = window.open('', 'PRINT');
+
+        mywindow.document.write('<html><head><title>' + document.title  + '</title>');
+        mywindow.document.write('</head><body >');
+        mywindow.document.write('<h1>' + document.title  + '</h1>');
+        mywindow.document.write(document.getElementById(elem).innerHTML);
+        mywindow.document.write('</body></html>');
+
+    mywindow.document.close(); // necessary for IE >= 10
+    mywindow.focus(); // necessary for IE >= 10*/
+
+    mywindow.print();
+    mywindow.close();
+
+    return true;
+}
+</script>      
+
+<script src="../dash/vendor/jquery/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="../dash/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+
+<link rel="stylesheet" type="text/css" href="../css/bootstrap-datepicker.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+<script type="text/javascript" src="../js/bootstrap-datepicker.min.js" charset="UTF-8"></script>
+
+<script type="text/javascript">
+    jQuery(document).ready(function($) {
+
+        $.fn.datepicker.defaults.format = "yyyy-mm-dd";
+        $('.datepicker').datepicker({
+            format: 'yyyy-mm-dd' 
+        });  
+        $.fn.datepicker.defaults.autoclose = true;
+
+
+    });
+</script>
+
+<!-- Metis Menu Plugin JavaScript -->
+<script src="../dash/vendor/metisMenu/metisMenu.min.js"></script>
+
+<!-- Morris Charts JavaScript -->
+<script src="../dash/vendor/raphael/raphael.min.js"></script>
+<script src="../dash/vendor/morrisjs/morris.min.js"></script>
+<script src="../dash/data/morris-data.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="../dash/dist/js/sb-admin-2.js"></script>
+
+</body>
+
+</html>
+					<script type="text/javascript">
+						
+						$(document).ready(function($) {
+							$(document).on('change', '#show-filer', function(event) {
+								event.preventDefault();
+								$rootStatus = $(this).val();
+
+								console.log($rootStatus);
+
+								$('#status-t tbody').find('tr').each(function(index, el) {
+									$this = $(this);
+									$status = $this.find('.show-my-st').attr('status');
+									if ($status != $rootStatus && $rootStatus != 'w') {
+										$this.css({'display': 'none'});
+									} else {
+										$this.css({'display': 'table-row'}); 
+									}
+
+								});
+
+							});
+						});
+
+
+					</script>
