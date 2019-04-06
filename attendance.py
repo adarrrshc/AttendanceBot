@@ -36,7 +36,8 @@ def attendance_fetcher(bot, update, args):
         "NETWORK PROGRAMMING LAB CS334": "NP_LAB  ",
         "COMPREHENSIVE EXAM CS352": "COMPR_EX",
         "WEB TECHNOLOGIES CS368": "WT       ",
-        "PRINCIPLES OF MANAGEMENT HS300 ": "POM       "
+        "PRINCIPLES OF MANAGEMENT HS300": "POM       ",
+        "NATURAL LANGUAGE PROCESSING CS366": "NLP"
 
 
 
@@ -105,36 +106,50 @@ def attendance_fetcher(bot, update, args):
     count = 1
     name = soup.find("td").text
     print(name)
-    for strong_tag in soup.find_all('td')[3:]:
-        # print(strong_tag.text)
-        i += 1
-        if(count == 1):
-            # print(strong_tag.text)
-            sname.append(subject_name[strong_tag.text])
-            total.append(strong_tag.next.next.next.next.next.text)
-            attended.append(
-                strong_tag.next.next.next.next.next.next.next.next.text)
-        if(count == 4):
-            count = 0
 
-        if(strong_tag.text.find('%') != -1):
-            #print("%%%%%%", strong_tag)
-            perc.append(strong_tag.text.replace(" ", ""))
-        if(i == 36):
-            break
-        count += 1
+    all_details = ""
+    all_details_list = []
+
+    table2 = soup.find_all('tbody')[0]
+    for i in table2.find_all("tr"):
+        all_details_list.append(i.text)
+        # print(i.text)
+
+    all_details_list = list(dict.fromkeys(all_details_list))
+    # print(all_details_list)
+
+    sub_tot_att_perc = []
+    for i in all_details_list:
+        l = i.split("\n")[1:]
+        # print("".join(l)+"\n")
+        print(l[0])
+        if("".join(l).find("TOTAL") == -1 and l[0] != "PRINCIPLES OF MANAGEMENT HS300 "):
+            sub_tot_att_perc.append(l)
+
+    print(sub_tot_att_perc)
+    for i in sub_tot_att_perc:
+        try:
+            sname.append(subject_name[i[0]])
+        except:
+            print(i[0])
+            sname.append(i[0])
+
+        total.append(i[1])
+        attended.append(i[2])
+        perc.append(i[3].replace(" ", ""))
 
     classcut = []
 
-    for i in range(0, 9):
+    for i in range(0, len(sname)):
         #print(attended[i],"   ",total[i],"   ",int(math.floor(float(attended[i])*(4/3))))
         a = int(math.floor((float(attended[i])*4)/3))
         b = int(total[i])
         classcut.append(a-b)
 
     final_text = ""
+    print(sname)
 
-    for i in range(9):
+    for i in range(len(sname)):
         # print(sname[i]+": " + attended[i] + "/"+total[i]+"  " +
         #       perc[i] + "  cuttable:"+str(classcut[i])+"\n")
         a = sname[i]+": " + attended[i] + "/"+total[i]+"  " + \
