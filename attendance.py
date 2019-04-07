@@ -9,7 +9,7 @@ def start(bot, update):
     print("InsideStart!")
 
     texxt = "Hey <strong>" + update.message.chat.first_name + "</strong>\n" + \
-        "Thanks for trying AttendanceBot!\nWe can help you maintain that sweet 75%\n Enter '/login username: password' to see results "
+        "Thanks for trying AttendanceBot!\nWe can help you maintain that sweet 75%\nEnter '/login username: password' to see results "
 
     bot.send_message(chat_id=update.message.chat_id, text=texxt,
                      parse_mode='HTML', disable_web_page_preview=True)
@@ -28,15 +28,15 @@ def attendance_fetcher(bot, update, args):
     print(date2)
 
     subject_name = {
-        "DESIGN AND ANALYSIS OF ALGORITHMS CS302": "DAA      ",
-        "COMPILER DESIGN CS304": "CD        ",
-        "COMPUTER NETWORKS CS306": "CN        ",
-        "SOFTWARE ENGINEERING AND PROJECT MANAGEMENT CS308": "SEPM    ",
-        "MICROPROCESSOR LAB CS332": "MP_LAB  ",
-        "NETWORK PROGRAMMING LAB CS334": "NP_LAB  ",
-        "COMPREHENSIVE EXAM CS352": "COMPR_EX",
-        "WEB TECHNOLOGIES CS368": "WT       ",
-        "PRINCIPLES OF MANAGEMENT HS300": "POM       ",
+        "DESIGN AND ANALYSIS OF ALGORITHMS CS302": "DAA",
+        "COMPILER DESIGN CS304": "CD",
+        "COMPUTER NETWORKS CS306": "CN",
+        "SOFTWARE ENGINEERING AND PROJECT MANAGEMENT CS308": "SEPM",
+        "MICROPROCESSOR LAB CS332": "MP_L",
+        "NETWORK PROGRAMMING LAB CS334": "NP_L",
+        "COMPREHENSIVE EXAM CS352": "C_EXM",
+        "WEB TECHNOLOGIES CS368": "WT",
+        "PRINCIPLES OF MANAGEMENT HS300": "POM",
         "NATURAL LANGUAGE PROCESSING CS366": "NLP"
 
 
@@ -129,14 +129,31 @@ def attendance_fetcher(bot, update, args):
     print(sub_tot_att_perc)
     for i in sub_tot_att_perc:
         try:
-            sname.append(subject_name[i[0]])
+            diff_len_sname = subject_name[i[0]]
+
         except:
             print(i[0])
-            sname.append(i[0])
+            diff_len_sname = i[0][0:6]+".. "
+
+        sub_len = len(diff_len_sname)
+        max_sub_len = 10-sub_len
+
+        for j in range(0, max_sub_len-1):
+            diff_len_sname = diff_len_sname+" "
+
+        sname.append(diff_len_sname)
 
         total.append(i[1])
         attended.append(i[2])
-        perc.append(i[3].replace(" ", ""))
+        percentage = str(i[3].split('%')[0]).replace(" ", "")
+        if(len(percentage) == 2):
+            percentage = percentage+".00%"
+        elif(len(percentage) == 3):
+            percentage = percentage+".0%"
+        else:
+            percentage = percentage+"%"
+
+        perc.append(percentage)
 
     classcut = []
 
@@ -155,10 +172,11 @@ def attendance_fetcher(bot, update, args):
         a = sname[i]+": " + attended[i] + "/"+total[i]+"  " + \
             perc[i] + "  cuttable:"+str(classcut[i])+"\n"
         final_text = final_text+a
-    final_text = "<strong>ATTENDANCE: "+name + \
-        "</strong>\nTill : "+date2+"\n\n"+final_text
+
+    final_text = "*ATTENDANCE*\n" + "`NAME : "+name + \
+        "\nTill : "+date2+"\n\n"+final_text+"`"
     bot.send_message(chat_id=update.message.chat_id,
-                     text=final_text, parse_mode="HTML")
+                     text=final_text, parse_mode="Markdown")
     print(final_text)
 
 
